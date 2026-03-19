@@ -306,7 +306,7 @@ const ContactForm = () => {
           <div>
             <label style={labelStyle}>WhatsApp Number</label>
             <div style={{ display: 'flex', gap: '12px' }}>
-                <div style={{ width: '100px' }}>
+                <div style={{ width: '85px', flexShrink: 0 }}>
                      <select 
                         required
                         name="countryCode"
