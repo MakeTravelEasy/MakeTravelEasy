@@ -41,23 +41,23 @@ const HowItWorks = () => {
         }} className="steps-container">
           <Step 
             number="1" 
-            title="Customized Itinerary" 
-            description="We create a detailed plan with a complete budget breakdown. (You will exactly know how much you are going to spend in your trip)."
+            title="Share your travel details" 
+            description="Tell us your dream destinations, travel dates, and how we can help. We’ll take the stress out of planning so you can focus on the excitement of your trip."
           />
           <Step 
             number="2" 
-            title="End-to-End Booking" 
-            description="We handle flights, trains, accommodation, experiences, and entry tickets."
+            title="Customized Itinerary" 
+            description="We’ll design a detailed, personal plan with a complete budget breakdown. You’ll know exactly what you’re spending, with no hidden costs or surprises."
           />
           <Step 
             number="3" 
             title="Book everything for you" 
-            description="We handle every detail: transport, accommodation, unique experiences, and entry tickets. You just pack your bags."
+            description="From flights and trains to boutique stays and unique local experiences, we handle every booking. You just pack your bags and get ready for the journey."
           />
           <Step 
             number="4" 
             title="Execute the plan perfectly" 
-            description="Travel with a personal expert in your pocket. Missed a train? Confused? Don't panic. Just message us, and we'll sort it out."
+            description="Travel with a personal expert in your pocket. If a plan changes or you need help on the ground, just message us. We’re here to sort everything out instantly."
           />
         </div>
       </div>

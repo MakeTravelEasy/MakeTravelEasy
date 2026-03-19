@@ -220,11 +220,16 @@ const ContactForm = () => {
     padding: '12px 16px',
     borderRadius: '8px',
     border: '1px solid #cbd5e1',
+    backgroundColor: '#ffffff', // Force white background for mobile
+    color: '#1e293b', // Ensure dark text color
     fontSize: '1rem',
     fontFamily: 'inherit',
     marginBottom: '8px',
     outline: 'none',
     transition: 'border-color 0.2s',
+    WebkitAppearance: 'none', // Reset iOS native styling
+    appearance: 'none',
+    opacity: 1, // Ensure full opacity on iOS
   };
 
   const selectStyle = {
@@ -256,12 +261,15 @@ const ContactForm = () => {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} style={{ 
-          backgroundColor: 'white', 
-          padding: '32px', 
-          borderRadius: '16px',
-          boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
-        }}>
+        <form 
+          onSubmit={handleSubmit} 
+          style={{ 
+            backgroundColor: 'white', 
+            padding: '32px', 
+            borderRadius: '16px',
+            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+          }}
+        >
           
           <div>
             <label htmlFor="fullName" style={labelStyle}>Full Name</label>

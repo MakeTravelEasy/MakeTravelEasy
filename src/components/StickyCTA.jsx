@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Button from './ui/Button';
 
-const StickyCTA = ({ onPlanClick }) => {
+const StickyCTA = ({ onPlanClick, hideSticky }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const StickyCTA = ({ onPlanClick }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  if (!isVisible) return null;
+  if (!isVisible || hideSticky) return null;
 
   return (
     <div style={{
